@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Recanto do Guerreiro</title>
+
+<link rel="stylesheet" href="./src/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="hero">
+    <img src="logo.jpg" alt="Recanto do Guerreiro" class="logo">
+
+    <h1>🔥 RECANTO DO GUERREIRO</h1>
+
+    <p>Espetos • Jantinha • Bebidas</p>
+
+    <span class="horario">
+        🕒 Segunda a Sexta • 18h às 23h
+    </span>
+</header>
+
+<section class="cliente">
+
+    <h2>Dados do Cliente</h2>
+
+    <input type="text" id="nome" placeholder="Seu nome">
+
+    <input type="tel" id="telefone" placeholder="(00) 00000-0000" maxlength="15">
+
+    <input type="text" id="endereco" placeholder="Seu Endereço">
+
+    <textarea id="obs" placeholder="Observações"></textarea>
+
+</section>
+
+<section class="filtros">
+
+    <button onclick="filtrar('todos')">Todos</button>
+    <button onclick="filtrar('espetos')">Espetos</button>
+    <button onclick="filtrar('jantinha')">Jantinha</button>
+    <button onclick="filtrar('acompanhamentos')">Acompanhamentos</button>
+    <button onclick="filtrar('bebidas')">Bebidas</button>
+
+</section>
+
+<main id="cardapio"></main>
+
+<section class="carrinho">
+
+    <h2>🛒 Seu Pedido</h2>
+
+    <div id="itensCarrinho"></div>
+
+    <h3 id="total">Total: R$ 0,00</h3>
+
+    <button class="whatsapp" onclick="enviarWhatsApp()">
+        Enviar Pedido
+    </button>
+
+</section>
+
+<script src="./src/script.js"></script>
+
+</body>
+</html>
